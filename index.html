@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Fap No Jerk 计时器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="background-decoration"></div>
+    <div class="container">
+        <div class="card">
+            <div class="card-ornament top-left"></div>
+            <div class="card-ornament top-right"></div>
+            <div class="card-ornament bottom-left"></div>
+            <div class="card-ornament bottom-right"></div>
+            
+            <div class="header">
+                <div class="logo-emblem">
+                    <div class="emblem-circle"></div>
+                </div>
+                <h1>no fap no jerk<span class="accent">已经</span></h1>
+                <div class="counter-container">
+                    <div class="counter-frame">
+                        <div class="counter" id="days">0</div>
+                        <div class="unit">天</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="details">
+                <div class="time-details">
+                    <div class="time-row">
+                        <div class="time-block">
+                            <div class="time-value-container">
+                                <div class="time-value" id="hours">00</div>
+                            </div>
+                            <div class="time-label">小时</div>
+                        </div>
+                        <div class="time-separator"><i class="fas fa-circle"></i></div>
+                        <div class="time-block">
+                            <div class="time-value-container">
+                                <div class="time-value" id="minutes">00</div>
+                            </div>
+                            <div class="time-label">分钟</div>
+                        </div>
+                        <div class="time-separator"><i class="fas fa-circle"></i></div>
+                        <div class="time-block">
+                            <div class="time-value-container">
+                                <div class="time-value" id="seconds">00</div>
+                            </div>
+                            <div class="time-label">秒</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="date-selector">
+                    <div class="date-label">
+                        <i class="fas fa-calendar-alt"></i>
+                        <label for="start-date">从这一天开始计算</label>
+                    </div>
+                    <div class="date-input-container">
+                        <input type="date" id="start-date" class="date-input">
+                    </div>
+                    <button id="set-date" class="btn">
+                        <span class="btn-text">确定</span>
+                        <span class="btn-icon"><i class="fas fa-check"></i></span>
+                    </button>
+                </div>
+                
+                <div class="motivation">
+                    <div class="quote-marks left"><i class="fas fa-quote-left"></i></div>
+                    <p id="motivation-text">每一天都是新的开始，坚持就是胜利。</p>
+                    <div class="quote-marks right"><i class="fas fa-quote-right"></i></div>
+                </div>
+            </div>
+            
+            <div class="divider">
+                <div class="divider-line"></div>
+                <div class="divider-icon"><i class="fas fa-gem"></i></div>
+                <div class="divider-line"></div>
+            </div>
+            
+            <div class="footer">
+                <div class="progress-section">
+                    <div class="progress-label">目标进度</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progress-bar"></div>
+                    </div>
+                </div>
+                <div class="milestone">
+                    <div class="milestone-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="milestone-text">下一个里程碑：<span id="next-milestone">7天</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js">
+          window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+
+</body>
+</html>
